@@ -1,5 +1,6 @@
 import {NavLink as Link} from 'react-router-dom'
 import {FaSearch, FaGrin} from 'react-icons/fa'
+import styled from 'styled-components'
 
 export const Nav =styled.nav`
     background:#4354;
