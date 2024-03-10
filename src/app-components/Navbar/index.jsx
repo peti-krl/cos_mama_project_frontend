@@ -1,27 +1,41 @@
 import React from 'react'
-import { Nav, NavMenu, NavLink, NavBtn, NavBtnLink } from './NavbarElems';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+import './styles.scss';
 
-const Navbar = () => {
-  return (
-    <>
-      <Nav>
-        <NavLink to ="/">
-            <h1>Logo</h1>
-        </NavLink>
-            <img src="" alt=""></img>
-            <NavMenu>
-                <NavLink to="/home" activeStyle>Home</NavLink>
-                <NavLink to="/about" activeStyle>Who are we?</NavLink>
-                <NavLink to="/events" activeStyle>Events</NavLink>
-                <NavLink to="/blog" activeStyle>Blog</NavLink>
-                <NavLink to="/contact" activeStyle>Contact</NavLink>
-            </NavMenu>
-            <NavBtn>
-                <NavBtnLink to="/signin"></NavBtnLink>
-            </NavBtn>
-      </Nav>
-    </>
+
+export default () => (
+    <NavigationMenu.Root>
+      <NavigationMenu.List>
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger>Home</NavigationMenu.Trigger>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger>About us</NavigationMenu.Trigger>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger>Events</NavigationMenu.Trigger>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger>Blog</NavigationMenu.Trigger>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger>Contact</NavigationMenu.Trigger>
+        </NavigationMenu.Item>
+
+      <NavigationMenu.Indicator className="NavigationMenuIndicator" />
+      </NavigationMenu.List>
+
+      {/* NavigationMenu.Content will be rendered here when active */}
+      <NavigationMenu.Viewport />
+    </NavigationMenu.Root>
+
   )
-}
-
-export default Navbar;

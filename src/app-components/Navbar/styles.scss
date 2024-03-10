@@ -1,0 +1,7 @@
+.NavigationMenuIndicator {
+    background-color: white;
+  }
+  .NavigationMenuIndicator[data-orientation='horizontal'] {
+    height: 3px;
+    transition: width, transform, 250ms ease;
+  }
