@@ -6,12 +6,18 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./app-context/store.ts";
 import "./index.css";
+import { Routes } from "./app-utils/routes.ts";
+import { SignInPage } from "./app-components/SignIn/SignInPage.tsx";
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: Routes.HOME,
     element: <App />,
+  },
+  {
+    path: Routes.REGISTER,
+    element: <SignInPage />,
   },
 ]);
 
