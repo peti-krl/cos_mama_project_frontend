@@ -38,11 +38,7 @@ export const SignInForm = () => {
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder="mail@example.com"
-                    type="email"
-                    {...field}
-                  />
+                  <Input placeholder="mail@example.com" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -75,7 +71,7 @@ export const SignInForm = () => {
       </div>
       <GoogleSignInButton>Sign in with Google</GoogleSignInButton>
       <p className="text-center text-sm text-gray-600 mt-2">
-        If you do&apos;t have an account, please &nbsp;
+        If you do&apos;t have an account, please&nbsp;
         <Link className="text-blue-500 hover:underline" to={Routes.LOGIN}>
           sign up
         </Link>
