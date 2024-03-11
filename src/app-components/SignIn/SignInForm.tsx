@@ -72,7 +72,7 @@ export const SignInForm = () => {
       <GoogleSignInButton>Sign in with Google</GoogleSignInButton>
       <p className="text-center text-sm text-gray-600 mt-2">
         If you do&apos;t have an account, please&nbsp;
-        <Link className="text-blue-500 hover:underline" to={Routes.LOGIN}>
+        <Link className="text-blue-500 hover:underline" to={Routes.REGISTER}>
           sign up
         </Link>
       </p>
