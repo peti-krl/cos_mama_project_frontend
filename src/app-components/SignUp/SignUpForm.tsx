@@ -16,6 +16,7 @@ import { SignUpFormType } from "./types";
 import { SignUpFormSchema } from "./utils";
 import { GoogleSignUpButton } from "./GoogleSignUpButton";
 import { Checkbox } from "@/components/ui/checkbox";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
 
 // TODO: Make DB call when ready
@@ -25,6 +26,8 @@ export const SignUpForm = () => {
     resolver: zodResolver(SignUpFormSchema),
   });
   const [terms, setTerms] = useState<boolean>(false);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
+  const [showRepeatPassword, setShowRepeatPassword] = useState<boolean>(false);
 
   const onSubmit = (values: SignUpFormType) => {
     if (terms) {
@@ -84,11 +87,19 @@ export const SignUpForm = () => {
               <FormItem>
                 <FormLabel>Password</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder="Enter your password"
-                    type="password"
-                    {...field}
-                  />
+                  <div className="relative">
+                    <Input
+                      placeholder="Enter your password"
+                      type={showPassword ? "text" : "password"}
+                      {...field}
+                    />
+                    <div
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
+                      onClick={() => setShowPassword((prevState) => !prevState)}
+                    >
+                      {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
+                    </div>
+                  </div>
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -101,11 +112,25 @@ export const SignUpForm = () => {
               <FormItem>
                 <FormLabel>Confirm Password</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder="Confirm your password"
-                    type="password"
-                    {...field}
-                  />
+                  <div className="relative">
+                    <Input
+                      placeholder="Confirm your password"
+                      type={showRepeatPassword ? "text" : "password"}
+                      {...field}
+                    />
+                    <div
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
+                      onClick={() =>
+                        setShowRepeatPassword((prevState) => !prevState)
+                      }
+                    >
+                      {showRepeatPassword ? (
+                        <AiFillEyeInvisible />
+                      ) : (
+                        <AiFillEye />
+                      )}
+                    </div>
+                  </div>
                 </FormControl>
                 <FormMessage />
               </FormItem>
