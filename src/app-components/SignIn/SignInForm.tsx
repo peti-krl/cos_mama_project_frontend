@@ -15,11 +15,14 @@ import { Routes } from "@/app-utils/routes";
 import { SignInFormType } from "./types";
 import { SignInFormSchema } from "./utils";
 import { GoogleSignInButton } from "./GoogleSignInButton";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { useState } from "react";
 
 export const SignInForm = () => {
   const form = useForm<SignInFormType>({
     resolver: zodResolver(SignInFormSchema),
   });
+  const [showPassword, setShowPassword] = useState<boolean>(false);
 
   const onSubmit = (values: SignInFormType) => {
     console.log(values);
@@ -49,11 +52,19 @@ export const SignInForm = () => {
               <FormItem>
                 <FormLabel>Password</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder="Enter your password"
-                    type="password"
-                    {...field}
-                  />
+                  <div className="relative">
+                    <Input
+                      placeholder="Enter your password"
+                      type={showPassword ? "text" : "password"}
+                      {...field}
+                    />
+                    <div
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center"
+                      onClick={() => setShowPassword((prevState) => !prevState)}
+                    >
+                      {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
+                    </div>
+                  </div>
                 </FormControl>
                 <FormMessage />
               </FormItem>
