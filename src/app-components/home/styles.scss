@@ -1,0 +1,51 @@
+.home-bannerImage-container{
+    width:100%;
+    
+}
+
+.primary-heading{
+    font-weight:500;
+
+}
+
+.primary-subheading{
+    font-weight: 300;
+}
+
+.subscribeButton{
+    background-color: #04AA6D; /* Green */
+    border:none;
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius:16px;
+  
+  :hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+}
+
+.aboutButton{
+    background-color: transparent;
+    border:2px solid white;
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:16px;
+
+    :hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+}
