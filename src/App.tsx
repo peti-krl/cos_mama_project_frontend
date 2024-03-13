@@ -1,5 +1,10 @@
-import { Button } from "@/components/ui/button";
+//import { Button } from "@/components/ui/button";
+import Navbar from "./app-components/Navbar/Navbar.jsx";
+
 
 export const App = () => {
-  return <Button>Click me</Button>;
+  return ( 
+     <Navbar />
+  //<Button>Click me</Button>;
+  )
 };
