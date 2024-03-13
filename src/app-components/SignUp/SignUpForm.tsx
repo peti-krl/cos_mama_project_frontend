@@ -115,18 +115,28 @@ export const SignUpForm = () => {
         <Button className="w-full mt-6" type="submit">
           Sign up
         </Button>
-        <div className="flex items-center space-x-2 mt-10">
-          <Checkbox
-            id="terms-checkbox"
-            onCheckedChange={() => setTerms((prevState) => !prevState)}
-          />
-          <label
-            htmlFor="terms-checkbox"
-            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-[0.8rem] text-muted-foreground"
-          >
-            By clicking Sign up, I agree that I have read and accepted the Terms
-            of Use and Privacy Policy.
-          </label>
+        <div className="flex flex-col space-y-2 mt-2">
+          <div className="flex items-center space-x-2">
+            <Checkbox
+              id="terms-checkbox"
+              onCheckedChange={() => setTerms((prevState) => !prevState)}
+            />
+            <label
+              htmlFor="terms-checkbox"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-[0.8rem] text-muted-foreground"
+            >
+              By clicking Sign up, I agree that I have read and accepted the
+              Terms of Use and Privacy Policy.
+            </label>
+          </div>
+          {form.formState.isSubmitted && !terms && (
+            <label
+              htmlFor="terms-checkbox"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-[0.8rem] text-red-500"
+            >
+              You must agree to the Terms of Use and Privacy Policy to sign up.
+            </label>
+          )}
         </div>
       </form>
       <div className="mx-auto my-4 flex w-full items-center justify-evenly before:mr-4 before:block before:h-px before:flex-grow before:bg-stone-400 after:ml-4 after:block after:h-px after:flex-grow after:bg-stone-400">
