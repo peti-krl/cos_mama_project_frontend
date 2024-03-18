@@ -2,6 +2,7 @@ import BackgroundBanner from "./app-components/home/BackgroundBanner";
 import Events from "./app-components/home/Events"
 import SearchBox from "./app-components/home/SearchBox";
 import Sponsors from "./app-components/home/Sponsors";
+import { Footer } from "./app-components/home/Footer";
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
     <Events />
     {/* add plans here */}
     <Sponsors />
+    <Footer />
     </>
   );
 };

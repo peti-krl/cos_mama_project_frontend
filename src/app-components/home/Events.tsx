@@ -15,12 +15,12 @@ const Events = () => {
     return (
         <>
             <div className='events'>
-                <p className='font-bold'>Upcoming events</p>
+                <p className='font-bold mt-5 mb-2 flex justify-center align-center'>Upcoming events</p>
                 <p>
                     <div className='inline flex flex row justify-items-center' >
                         <Card>
                             <CardHeader className='w-[280px]'>
-                                <img src="../../assets/event1.jpg" style={{ height: '80px' }} />
+                                <img src="/event1.jpg" style={{ height: '110px' }} />
                                 <CardTitle>Educational event - Breastfeeding Workshop</CardTitle>
                             </CardHeader>
                             <CardContent>
@@ -36,7 +36,7 @@ const Events = () => {
                         </Card>
                         <Card className='w-[280px]'>
                             <CardHeader >
-                                <img src="../../assets/event2.jpg" style={{ height: '80px' }} />
+                                <img src="/event2.jpg" style={{ height: '110px' }} />
                                 <CardTitle>Entertainment event - Mamma Yoga</CardTitle>
                             </CardHeader>
                             <CardContent>
@@ -52,8 +52,8 @@ const Events = () => {
                         </Card>
                         <Card className='w-[280px]'>
                             <CardHeader >
-                                <img src="../../assets/event3.jpg" style={{ height: '80px' }} />
-                                <CardTitle>Networking event - Mocktails</CardTitle>
+                                <img src="/event3.jpg" style={{ height: '110px' }} />
+                                <CardTitle>Networking event - DIY Mocktails</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -69,10 +69,10 @@ const Events = () => {
                         </Card>
                     </div>
                 </p>
-                <p>
-                    <Button variant="outline" className='object-center'>Load more</Button>
+                <div className="flex justify-center align-center mt-2">
+                    <Button variant="outline">Load more</Button>
 
-                </p>
+                </div>
             </div>
         </>
     )

@@ -4,10 +4,9 @@ import './styles.css'
 const BackgroundBanner = () => {
   return (
     <>
-      <div className='home-banner-container'>
-        <div className='home-bannerImage-container ml-20'>
-
-          <div className='home-text-section'>
+      <div className='home-banner-container bg-no-repeat'>
+        <div className='home-bannerImage-container'>
+          <div className='home-text-section ml-20'>
             <h1 className='primary-heading'>The community for mothers</h1>
             <p className='primary-subheading'>Make being a mother fun again!</p>
             <p className='primary-subheading'>Learn, practice and have fun</p>
@@ -16,8 +15,6 @@ const BackgroundBanner = () => {
             <Button variant="outline">Learn more</Button>
           </div>
         </div>
-
-      </div>
 
       <div className="rounded-2xl bg-indigo-800 ml-2 mr-2">
         <h1 className='pl-5 pb-3 pt-3 font-semibold text-white'>What are we?</h1>
@@ -28,6 +25,7 @@ const BackgroundBanner = () => {
           in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur</p>
           <br></br>
+      </div>
       </div>
     </>
   )

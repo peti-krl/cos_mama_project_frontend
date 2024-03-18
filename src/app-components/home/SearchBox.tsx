@@ -24,13 +24,13 @@ export function SearchBox() {
     const [date, setDate] = React.useState<Date>()
     return (
         <>
-            <div className="w-[600px] rounded-2xl bg-indigo-800 ml-5 mr-8 mt-8 justify-center">
+            <div className="rounded-2xl bg-indigo-800 mt-8 pt-2 flex justify-center align-center ml-12 mr-12">
                 <Popover>
                     <PopoverTrigger asChild>
                         <Button
                             variant={"outline"}
                             className={cn(
-                                "w-[280px] justify-start text-left font-normal bg-indigo-800 mt-2 ml-2 mr-2 inline-flex",
+                                "w-[280px] justify-start text-left font-normal bg-indigo-800 inline-flex",
                                 !date && "text-muted-foreground"
                             )}
                         >
@@ -48,7 +48,7 @@ export function SearchBox() {
                     </PopoverContent>
                 </Popover>
                 <Select >
-                    <SelectTrigger className="w-[280px] justify-start text-left font-normal bg-indigo-800 ml-2 mb-2 inline-flex">
+                    <SelectTrigger className="w-[280px] justify-start text-left font-normal bg-indigo-800 mt - 2 ml-2 mb-2 inline-flex">
                         <SelectValue placeholder="Town" />
                     </SelectTrigger>
                     <SelectContent>
@@ -58,8 +58,6 @@ export function SearchBox() {
                     </SelectContent>
                 </Select>
             </div>
-
-
         </>
     )
 }
