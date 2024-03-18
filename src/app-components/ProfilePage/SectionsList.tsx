@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -34,24 +35,33 @@ export const SectionsList = () => {
         </div>
       </CardHeader>
       <CardContent>
-        <RxAvatar />
-        <p>Personal Data</p>
+        <Button variant="ghost" className="flex ">
+          <RxAvatar /> Personal Data
+        </Button>
       </CardContent>
       <CardContent>
-        <CiBellOn />
-        <p>Subscription</p>
+        <Button variant="ghost" className="flex ">
+          <CiBellOn />
+          Subscription
+        </Button>
       </CardContent>
       <CardContent>
-        <PiCoinsLight />
-        <p>Payment & Instalment</p>
+        <Button variant="ghost" className="flex ">
+          <PiCoinsLight />
+          Payment & Instalment
+        </Button>
       </CardContent>
       <CardContent>
-        <SlPresent />
-        <p>Discounts</p>
+        <Button variant="ghost" className="flex ">
+          <SlPresent />
+          Discounts
+        </Button>
       </CardContent>
       <CardContent>
-        <HiOutlineMail />
-        <p>Contact us</p>
+        <Button variant="ghost" className="flex ">
+          <HiOutlineMail />
+          Contact us
+        </Button>
       </CardContent>
       <CardFooter>
         <div className="flex items-center">
