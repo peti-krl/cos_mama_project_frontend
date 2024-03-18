@@ -1,5 +1,10 @@
-import { Button } from "@/components/ui/button";
+import Events from "./app-components/EventsPage/Events"
 
 export const App = () => {
-  return <Button>Click me</Button>;
+  return (
+    <>
+    <Events />
+    
+    </>
+  );
 };
