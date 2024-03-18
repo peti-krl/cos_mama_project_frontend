@@ -35,30 +35,46 @@ export const SectionsList = () => {
         </div>
       </CardHeader>
       <CardContent>
-        <Button variant="ghost" className="flex ">
-          <RxAvatar /> Personal Data
+        <Button
+          variant="ghost"
+          className="flex justify-between w-full h-full rounded-none"
+        >
+          <RxAvatar />
+          Personal Data
         </Button>
       </CardContent>
       <CardContent>
-        <Button variant="ghost" className="flex ">
+        <Button
+          variant="ghost"
+          className="flex justify-between w-full h-full rounded-none"
+        >
           <CiBellOn />
           Subscription
         </Button>
       </CardContent>
       <CardContent>
-        <Button variant="ghost" className="flex ">
+        <Button
+          variant="ghost"
+          className="flex justify-between w-full h-full rounded-none text-justify"
+        >
           <PiCoinsLight />
-          Payment & Instalment
+          Payment
         </Button>
       </CardContent>
       <CardContent>
-        <Button variant="ghost" className="flex ">
+        <Button
+          variant="ghost"
+          className="flex justify-between w-full h-full rounded-none"
+        >
           <SlPresent />
           Discounts
         </Button>
       </CardContent>
       <CardContent>
-        <Button variant="ghost" className="flex ">
+        <Button
+          variant="ghost"
+          className="flex justify-between w-full h-full rounded-none"
+        >
           <HiOutlineMail />
           Contact us
         </Button>

@@ -5,7 +5,9 @@ export const Profile = () => {
   return (
     <>
       <ProfileBreadcrumbContainer currentSection="Personal Data" />
-      <SectionsList />
+      <div className="mt-5">
+        <SectionsList />
+      </div>
     </>
   );
 };
