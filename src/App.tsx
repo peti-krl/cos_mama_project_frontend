@@ -1,5 +1,9 @@
-import { Button } from "@/components/ui/button";
+//import { Button } from "@/components/ui/button";
+import AboutPage from "./app-components/About/AboutPage";
 
 export const App = () => {
-  return <Button>Click me</Button>;
+  return (
+    <AboutPage />
+  )
+  //<Button>Click me</Button>;
 };
