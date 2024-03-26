@@ -7,17 +7,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-  } from "@/components/ui/select";
-  import { Input } from "@/components/ui/input";
-  
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 const ContactCard = () => {
   return (
@@ -63,9 +63,12 @@ const ContactCard = () => {
                     <Input id="email" placeholder="Enter your email:" />
                   </div>
                   <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="email">Question</Label>
-                    <Input id="email" placeholder="Enter your question here: " />
-                  </div>
+                    <Label htmlFor="email">Your Question/Message</Label>
+                      <Textarea
+                        placeholder="Type your message here."
+                        id="message-2"
+                      />
+                    </div>
                 </div>
               </form>
             </CardContent>
