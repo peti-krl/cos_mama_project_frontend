@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-
-// Import your components
-import { ProfileBreadcrumbContainer } from "./ProfileBreadcrumbContainer";
 import { SectionsList } from "./SectionsList";
 import { Identification } from "./Identification";
 import { Button } from "@/components/ui/button";
@@ -19,8 +16,6 @@ export const Profile = () => {
         return <Payment />
       case 3:
         return <Discounts />
-      case 4:
-        return <ContactUs />
     }
   }
 
@@ -53,19 +48,39 @@ const PersonalData = () => {
 
 const Subscription = () => {
   return <>
-  <div>
-    <p>Current subscription</p>
-    <Button>Update Plan</Button>
+  <div className="inline-block mr-12">
+    <h1>Current subscription</h1>
+    <h5>Valid until:</h5>
+    <div className="bg-red-300 w6  h-[120px]"> 
+      <p className=" place-content-center ">13.05</p>
+    </div>
+    <Button>Unsubscribe</Button>
   </div>
   </>
 }
 
 const Payment = () => {
-  return 
-  <>
+  return <>
      <div className="inline-block mr-4">
-          <Identification placeholder="**********" title="Creditcard"/>
-          <Identification placeholder="Account number: ****" title="PayPay"/>
+          <Identification placeholder="**********" title="Creditcard"/><img src="/cards.jpg" alt="Cards" width="50px"/>
+          <Identification placeholder="Account number: ****" title="PayPay"/><img src="/payPal.png" alt="Cards" width="50px"/> 
       </div>
+  </>
+}
+
+const Discounts = () => {
+  return <>
+    <div className="inline-block mr-4">
+    <p>Discount codes from:</p>
+          <Identification placeholder="10Community" title="Ciela Bookstore"/>
+          <Identification placeholder="MammaComm25" title="Puffies"/>
+          <Identification placeholder="CommunityMamma15" title="1 Magazine"/>
+    </div>
+
+    <div className="inline-block mr-4">
+          <Identification placeholder="MC2024" title="Бочко"/>
+          <Identification placeholder="Mustela15" title="Mustela"/>
+          <Identification placeholder="10MammaCM" title="She and Her"/>
+    </div>
   </>
 }
