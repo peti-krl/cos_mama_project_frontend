@@ -18,5 +18,5 @@ export const App = () => {
     <BlogHomepage />
     <Footer />
     </>
-  );
+  )
 };
