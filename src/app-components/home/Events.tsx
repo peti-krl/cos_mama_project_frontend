@@ -18,9 +18,9 @@ const Events = () => {
                 <p className='font-bold mt-5 mb-2 flex justify-center align-center'>Upcoming events</p>
                 <p>
                     <div className='inline flex flex row justify-items-center' >
-                        <Card>
-                            <CardHeader className='w-[280px]'>
-                                <img src="/event1.jpg" style={{ height: '110px' }} />
+                        <Card className='flex-1 h-24rem mr-4 ml-4'>
+                            <CardHeader>
+                                <img src="/event1.jpg" style={{ height: '140px' }} />
                                 <CardTitle>Educational event - Breastfeeding Workshop</CardTitle>
                             </CardHeader>
                             <CardContent>
@@ -34,9 +34,9 @@ const Events = () => {
                                 </div>
                             </CardContent>
                         </Card>
-                        <Card className='w-[280px]'>
+                        <Card className='flex-1 h-24rem mr-4 ml-4'>
                             <CardHeader >
-                                <img src="/event2.jpg" style={{ height: '110px' }} />
+                                <img src="/event2.jpg" style={{ height: '140px' }} />
                                 <CardTitle>Entertainment event - Mamma Yoga</CardTitle>
                             </CardHeader>
                             <CardContent>
@@ -50,9 +50,9 @@ const Events = () => {
                                 </div>
                             </CardContent>
                         </Card>
-                        <Card className='w-[280px]'>
-                            <CardHeader >
-                                <img src="/event3.jpg" style={{ height: '110px' }} />
+                        <Card className='flex-1 h-24rem mr-4 ml-4'>
+                            <CardHeader>
+                                <img src="/event3.jpg" style={{ height: '140px' }} />
                                 <CardTitle>Networking event - DIY Mocktails</CardTitle>
                             </CardHeader>
                             <CardContent>
@@ -64,7 +64,6 @@ const Events = () => {
                                     <FaClock style={{ marginRight: '8px', fontSize: '0.7rem' }} />
                                     <p className='text-sm'> 6pm - 8pm (workdays) </p>
                                 </div>
-
                             </CardContent>
                         </Card>
                     </div>

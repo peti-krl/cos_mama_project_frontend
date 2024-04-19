@@ -1,16 +1,15 @@
 import { Button } from '@/components/ui/button'
-import './styles.css'
 
 const BackgroundBanner = () => {
   return (
-    <>
-      <div className='home-banner-container bg-no-repeat'>
-        <div className='home-bannerImage-container'>
-          <div className='home-text-section ml-20'>
-            <h1 className='primary-heading'>The community for mothers</h1>
-            <p className='primary-subheading'>Make being a mother fun again!</p>
-            <p className='primary-subheading'>Learn, practice and have fun</p>
-            <p className='primary-subheading'>We build a community, you wanna be part of </p>
+    <div className="bg-white">
+      <div className='bg-no-repeat w-max mx-auto'>
+        <div className='w-max h-1/3 bg-[url("./poster-background.png)]'>
+          <div className='pt-3 pb-5 ml-20'>
+            <h1 className='font-medium'>The community for mothers</h1>
+            <p className='font-light'>Make being a mother fun again!</p>
+            <p className='font-light'>Learn, practice and have fun</p>
+            <p className='font-light'>We build a community, you wanna be part of </p>
             <Button className="mr-2 mt-2">Subscribe</Button>
             <Button variant="outline">Learn more</Button>
           </div>
@@ -27,7 +26,7 @@ const BackgroundBanner = () => {
           <br></br>
       </div>
       </div>
-    </>
+    </div>
   )
 }
 
