@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import React from "react";
 import { CgProfile } from "react-icons/cg";
 import { CiBellOn, CiLogout } from "react-icons/ci";
 import { HiOutlineMail } from "react-icons/hi";
@@ -15,7 +16,13 @@ import { PiCoinsLight } from "react-icons/pi";
 import { RxAvatar } from "react-icons/rx";
 import { SlPresent } from "react-icons/sl";
 
-export const SectionsList = () => {
+interface SectionsListProps {
+  setSelectedTab: React.Dispatch<React.SetStateAction<number>>
+}
+
+export const SectionsList: React.FC<SectionsListProps> = ({
+  setSelectedTab
+}) => {
   return (
     <Card className="w-[200px]">
       <CardHeader className="flex items-center">
@@ -38,6 +45,7 @@ export const SectionsList = () => {
         <Button
           variant="ghost"
           className="flex justify-between w-full h-full rounded-none"
+          onClick={() => setSelectedTab(0)}
         >
           <RxAvatar />
           Personal Data
@@ -47,6 +55,7 @@ export const SectionsList = () => {
         <Button
           variant="ghost"
           className="flex justify-between w-full h-full rounded-none"
+          onClick={() => setSelectedTab(1)}
         >
           <CiBellOn />
           Subscription
@@ -56,6 +65,7 @@ export const SectionsList = () => {
         <Button
           variant="ghost"
           className="flex justify-between w-full h-full rounded-none text-justify"
+          onClick={() => setSelectedTab(2)}
         >
           <PiCoinsLight />
           Payment
@@ -65,6 +75,7 @@ export const SectionsList = () => {
         <Button
           variant="ghost"
           className="flex justify-between w-full h-full rounded-none"
+          onClick={() => setSelectedTab(3)}
         >
           <SlPresent />
           Discounts
@@ -74,6 +85,7 @@ export const SectionsList = () => {
         <Button
           variant="ghost"
           className="flex justify-between w-full h-full rounded-none"
+          onClick={() => setSelectedTab(4)}
         >
           <HiOutlineMail />
           Contact us
