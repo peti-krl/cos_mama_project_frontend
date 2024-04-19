@@ -5,7 +5,7 @@ import {
     NavigationMenuList,
   } from "@/components/ui/navigation-menu"
 import './styles.scss';
-import Logo from "./Logo.jsx"
+import Logo from "./Logo"
 import { FaUser } from 'react-icons/fa';
 
 export default () => (
@@ -27,7 +27,7 @@ export default () => (
         <NavigationMenuLink href="/blog">Blog</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem className="text-violet11 hover:bg-violet3 focus:shadow-violet7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
-        <NavigationMenuLink href="/contact">Contact</NavigationMenuLink>
+        <NavigationMenuLink href="/partners">Partners</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
       <NavigationMenuLink href="/register">

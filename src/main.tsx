@@ -10,6 +10,9 @@ import { Profile } from "./app-components/ProfilePage/Profile.tsx";
 import "./index.css";
 import { SignInPage } from "./app-components/SignIn/SignInPage.tsx";
 import { SignUpPage } from "./app-components/SignUp/SignUpPage.tsx";
+import AboutPage from "./app-components/About/AboutPage.tsx";
+import PartnersPage from "./app-components/Partners/PartnersPage.tsx";
+import Events from "./app-components/home/Events.tsx";
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -29,6 +32,18 @@ const router = createBrowserRouter([
     path: Routes.PROFILE,
     element: <Profile />,
   },
+  {
+    path: Routes.ABOUT,
+    element: <AboutPage />
+  },
+  {
+    path: Routes.PARTNERS,
+    element: <PartnersPage />
+  },
+  {
+    path: Routes.EVENTS,
+    element: <Events />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
