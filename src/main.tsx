@@ -8,6 +8,7 @@ import { store } from "./app-context/store.ts";
 import "./index.css";
 import { Routes } from "./app-utils/routes.ts";
 import { SignInPage } from "./app-components/SignIn/SignInPage.tsx";
+import { SignUpPage } from "./app-components/SignUp/SignUpPage.tsx";
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: Routes.LOGIN,
     element: <SignInPage />,
+  },
+  {
+    path: Routes.REGISTER,
+    element: <SignUpPage />,
   },
 ]);
 
