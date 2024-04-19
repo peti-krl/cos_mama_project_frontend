@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { SectionsList } from "./SectionsList";
 import { Identification } from "./Identification";
 import { Button } from "@/components/ui/button";
