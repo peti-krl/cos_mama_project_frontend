@@ -1,5 +1,9 @@
-import { Button } from "@/components/ui/button";
+import Blogs from "./app-components/BlogsPage/Blogs"
 
 export const App = () => {
-  return <Button>Click me</Button>;
+  return (
+    <>
+    <Blogs/>
+    </>
+  );
 };
