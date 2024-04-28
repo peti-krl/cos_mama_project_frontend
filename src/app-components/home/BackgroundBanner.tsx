@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button'
 import posterBackground from '../../../public/poster-background.png';
-import posterBackground from "../../../public/poster-background.png"
 
 const BackgroundBanner = () => {
   return (

@@ -38,7 +38,7 @@ const router = createBrowserRouter([
   },
   {
     path: Routes.PARTNERS,
-    element: <PartnersPage />
+    element: <PartnersPage children={undefined} />
   },
   {
     path: Routes.EVENTS,
