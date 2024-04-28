@@ -4,13 +4,12 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
   } from "@/components/ui/navigation-menu"
-import './styles.scss';
 import Logo from "./Logo"
 import { FaUser } from 'react-icons/fa';
 
-export default () => (
-  <NavigationMenu className="relative z-[1] flex w-screen justify-center">
-    <NavigationMenuList className="center shadow-blackA4 m-0 flex list-none rounded-[6px] bg-white p-1 shadow-[0_2px_10px]">
+export default() => (
+  <NavigationMenu className="relative z-[1] w-full flex justify-center mx-auto ">
+    <NavigationMenuList className="center w-full shadow-blackA4 m-0 flex list-none rounded-[6px] bg-white p-1 shadow-[0_2px_10px]">
       <NavigationMenuItem>
       <Logo />
       </NavigationMenuItem>

@@ -69,8 +69,7 @@ const Events = () => {
                     </div>
                 </p>
                 <div className="flex justify-center align-center mt-2">
-                    <Button variant="outline">Load more</Button>
-
+                    <Button variant="outline" href="/events" style={{ textDecoration: 'none' }}>Load more</Button>
                 </div>
             </div>
         </>

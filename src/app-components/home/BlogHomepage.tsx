@@ -37,8 +37,7 @@ const BlogHomepage = () => {
                     </div>
                 </p>
                 <div className="flex justify-center align-center mt-2 mb-4">
-                    <Button variant="outline">Load more</Button>
-
+                    <Button variant="outline" href="/blog">Load more</Button>
                 </div>
             </div>
         </>

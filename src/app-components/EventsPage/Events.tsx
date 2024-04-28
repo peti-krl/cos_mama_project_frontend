@@ -17,10 +17,12 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+//import {Navbar} from "../Navbar/Navbar";
 
 const Events = () => {
   return (
     <>
+    //<Navbar />
       <div className="events ml-6">
         <p className="font-bold mt-5 mb-2 flex justify-center align-center flex space-x-4">
           Upcoming events
