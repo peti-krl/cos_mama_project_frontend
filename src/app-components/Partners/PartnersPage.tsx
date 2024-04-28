@@ -18,7 +18,7 @@ export const PartnersPage = () => {
         <h1 className="text-6xl font-bold mt-[80px] mb-[100px] text-center">
           PARTNERS
         </h1>
-        <div className="flex justify-center items-stretch mx-20 my-7 space-x-4">
+        <div className="flex justify-center items-stretch mx-[150px] my-7 space-x-4">
           <div
             className="flex bg-white p-11 rounded-2xl shadow-lg w-1/2"
             style={{ height: "800px" }}
