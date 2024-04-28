@@ -1,10 +1,11 @@
 import { Button } from '@/components/ui/button'
+import posterBackground from "../../../public/poster-background.png"
 
 const BackgroundBanner = () => {
   return (
-    <div className="bg-white">
-      <div className='bg-no-repeat w-max mx-auto'>
-        <div className='w-max h-1/3 bg-[url("./poster-background.png)]'>
+<div className="bg-white">
+      <div className='w-max mx-auto' >
+        <div className='w-full h-1/3' style={{ backgroundImage: `url(${posterBackground})` }} >
           <div className='pt-3 pb-5 ml-20'>
             <h1 className='font-medium'>The community for mothers</h1>
             <p className='font-light'>Make being a mother fun again!</p>

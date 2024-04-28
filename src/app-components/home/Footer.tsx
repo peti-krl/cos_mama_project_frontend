@@ -8,7 +8,7 @@ export const Footer = () => {
           <h3 className="text-lg font-semibold mb-2 underline">Follow Us</h3>
           <div className="flex">
           <a href="https://www.facebook.com/yourpage" target="_blank" className="inline-block mr-4"><FaFacebookF /></a>
-          <a href="https://www.instagram.com/yourpage" target="_blank" className="inline-block mr-4"><FaInstagram /></a>
+          <a href="https://www.instagram.com/mamabuddy.bg?igsh=MTFyNTdpeWF2Z280aA==" target="_blank" className="inline-block mr-4"><FaInstagram /></a>
           </div>
         </div>
         <div className="column navbar-shortcuts">
