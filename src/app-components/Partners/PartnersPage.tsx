@@ -1,11 +1,13 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-const CheckmarkSpan = ({ children }) => {
-  const className = "flex-none bg-white mr-2 font-bold flex justify-center items-center";
+import { ReactNode } from "react";
+
+const CheckmarkSpan = ({ children }: { children: ReactNode }) => {
+  const className =
+    "flex-none bg-white mr-2 font-bold flex justify-center items-center";
   return <span className={className}>{children}</span>;
 };
-
 
 export const PartnersPage = () => {
   const placeholderText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viva, nec ultrices libero feugiat vel. Praesent non orci auctor, suscipit tellus at, consequat purus. Pellentesque vel lorem malesuada, faucibus erat sed, fermentum nulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet consequat diam, nec ultrices libero feugiat vel. Praesent non orci auctor, suscipit tellus at, consequat purus. Pellentesque vel lorem malesuada, faucibus erat sed, fermentum nulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet consequat diam, nec ultrices libero feugiat vel. Praesent non orci auctor, suscipit tellus at, consequat purus. Pellentesque vel lorem malesuada, faucibus erat sed, fermentum nulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet consequat diam, nec ultrices libero feugiat vel. Praesent non orci auctor, suscipit tellus at, consequat purus. Pellentesque vel lorem malesuada, faucibus erat sed, fermentum nulla.`;
@@ -16,16 +18,25 @@ export const PartnersPage = () => {
         <h1 className="text-6xl font-bold mt-[80px] mb-[100px] text-center">
           PARTNERS
         </h1>
-        <div className="flex justify-between items-center w-screen my-7">
-          <div className="h-[850px] bg-white p-11 rounded-2xl shadow-lg flex-1 mr-4">
-            <h2 className="text-4xl font-bold mb-8">Partners with ...</h2>
-            <p className="text-2xl md:text-xl sm:text-lg mb-4">{placeholderText}</p>
+        <div className="flex justify-center items-stretch mx-20 my-7 space-x-4">
+          <div
+            className="flex bg-white p-11 rounded-2xl shadow-lg w-1/2"
+            style={{ height: "800px" }}
+          >
+            <div className="overflow-y-auto">
+              <h2 className="text-4xl font-bold mb-8">Partners with ...</h2>
+              <p className="text-2xl md:text-xl sm:text-lg">
+                {placeholderText}
+              </p>
+            </div>
           </div>
-          <img
-            src="/images/women_picnic.jpg"
-            alt="Image Description"
-            className="w-1/2 rounded-2xl h-max shadow-lg"
-          />
+          <div className="w-1/2" style={{ height: "800px" }}>
+            <img
+              src="/images/women_picnic.jpg"
+              alt="Image Description"
+              className="object-cover rounded-2xl w-full h-full"
+            />
+          </div>
         </div>
 
         <h1 className="text-6xl font-bold mt-[120px] mb-[100px] text-center">
@@ -44,18 +55,26 @@ export const PartnersPage = () => {
             </div>
 
             <ul className="flex-1 p-5">
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan> Newsletter</li>
-              <li className="mb-3 text-l flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Logo on our website</li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Mention in article (without link)</li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Merch during events</li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan> Newsletter
+              </li>
+              <li className="mb-3 text-l flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Logo on our website
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Mention in article (without
+                link)
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Merch during events
+              </li>
             </ul>
 
             <div className="flex justify-center items-center p-5 mt-16">
-                <Button className="w-[120px] h-[50px] mx-1">Choose</Button>
+              <Button className="w-[120px] h-[50px] mx-1">Choose</Button>
             </div>
           </div>
-         
-          
+
           <div className="w-1/4 h-[650px] bg-white mx-8 my-5 rounded-2xl border-2 border-red-400 shadow-lg flex flex-col">
             <div className="p-5">
               <h3 className="text-center text-2xl font-bold ">GOLD</h3>
@@ -66,15 +85,25 @@ export const PartnersPage = () => {
               </div>
             </div>
             <ul className="flex-1 p-5">
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Newsletter </li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Logo on our website</li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Link in an article</li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Merch during events</li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Interactive workshop</li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Newsletter{" "}
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Logo on our website
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Link in an article
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Merch during events
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Interactive workshop
+              </li>
             </ul>
 
             <div className="flex justify-center items-center p-5">
-                <Button className="w-[120px] h-[50px] mx-1">Choose</Button>
+              <Button className="w-[120px] h-[50px] mx-1">Choose</Button>
             </div>
           </div>
 
@@ -88,15 +117,25 @@ export const PartnersPage = () => {
               </div>
             </div>
             <ul className="flex-1 p-5">
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Newsletter</li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Logo on our website</li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Whole article for the company</li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Exclusive event for the company</li>
-              <li className="mb-3 flex items-center"><CheckmarkSpan>✓</CheckmarkSpan>Post in social media</li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Newsletter
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Logo on our website
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Whole article for the company
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Exclusive event for the company
+              </li>
+              <li className="mb-3 flex items-center">
+                <CheckmarkSpan>✓</CheckmarkSpan>Post in social media
+              </li>
             </ul>
 
             <div className="flex justify-center items-center p-5">
-                <Button className="w-[120px] h-[50px] mx-1">Choose</Button>
+              <Button className="w-[120px] h-[50px] mx-1">Choose</Button>
             </div>
           </div>
         </div>
@@ -119,4 +158,4 @@ export const PartnersPage = () => {
       </div>
     </>
   );
-};  
+};
