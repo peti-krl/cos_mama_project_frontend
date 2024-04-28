@@ -22,7 +22,6 @@ import {
 const Events = () => {
   return (
     <>
-    //<Navbar />
       <div className="events ml-6">
         <p className="font-bold mt-5 mb-2 flex justify-center align-center flex space-x-4">
           Upcoming events
