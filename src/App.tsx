@@ -6,6 +6,9 @@ import BlogHomepage from "./app-components/home/BlogHomepage";
 import Navbar from "./app-components/Navbar/Navbar";
 import { Footer } from "./app-components/home/Footer";
 
+import Subscription from "./app-components/home/Subscription";
+import BePartner from "./app-components/home/BePartner";
+
 export const App = () => {
   return ( 
     <>
@@ -13,9 +16,10 @@ export const App = () => {
     <BackgroundBanner />
     <SearchBox />
     <Events />
-    {/* add plans here */}
+    <Subscription />
     <Sponsors />
     <BlogHomepage />
+    <BePartner />
     <Footer />
     </>
   )
