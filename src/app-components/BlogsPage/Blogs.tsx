@@ -1,12 +1,5 @@
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  /*CardDescription,*/
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Dialog,
   DialogContent,
@@ -16,7 +9,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-const Events = () => {
+const Blogs = () => {
   return (
     <>
       <div className="events ml-6">
@@ -476,4 +469,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default Blogs;

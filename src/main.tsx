@@ -14,6 +14,7 @@ import { Profile } from "./app-components/ProfilePage/Profile.tsx";
 import { SignUpPage } from "./app-components/SignUp/SignUpPage.tsx";
 import Navbar from "./app-components/Navbar/Navbar.tsx";
 import Events from "./app-components/EventsPage/Events.tsx";
+import Blogs from "./app-components/BlogsPage/Blogs.tsx";
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: Routes.EVENTS,
         element: <Events />,
+      },
+      {
+        path: Routes.BLOG,
+        element: <Blogs />,
       },
     ],
   },
