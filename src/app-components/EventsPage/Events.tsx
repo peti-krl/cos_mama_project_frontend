@@ -378,7 +378,7 @@ const Events = () => {
         </p>
       </div>
       <div className="flex justify-center align-center mt-2">
-        <Button variant="outline">Load more</Button>
+        <Button variant="outline">See more</Button>
       </div>
     </>
   );
