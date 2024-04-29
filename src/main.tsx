@@ -12,8 +12,8 @@ import AboutPage from "./app-components/About/AboutPage.tsx";
 import { PartnersPage } from "./app-components/Partners/PartnersPage.tsx";
 import { Profile } from "./app-components/ProfilePage/Profile.tsx";
 import { SignUpPage } from "./app-components/SignUp/SignUpPage.tsx";
-import Events from "./app-components/home/Events.tsx";
 import Navbar from "./app-components/Navbar/Navbar.tsx";
+import Events from "./app-components/EventsPage/Events.tsx";
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
